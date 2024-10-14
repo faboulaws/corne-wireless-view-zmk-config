@@ -24,7 +24,7 @@
     combos {
         compatible = "zmk,combos";
 
-        left {
+        combo_left {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <39 36>;
         };
