@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,7 +33,7 @@
             label = "Base";
             bindings = <
 &kp ESCAPE  &kp Q        &kp W           &lt 3 F                      &kp P           &kp B                   &kp J                  &kp L       &kp U                      &kp Y            &kp SEMICOLON  &kp BSPC
-&kp TAB     &mt LCTRL A  &mt LEFT_ALT R  &mt LEFT_GUI S               &lt 1 T         &lt 3 G                 &lt 3 M                &lt 2 N     &mt RIGHT_GUI E            &mt RIGHT_ALT I  &mt RCTRL O    &kp SQT
+&kp TAB     &hm LCTRL A  &hm LEFT_ALT R  &hm LEFT_GUI S               &lt 1 T         &lt 3 G                 &lt 3 M                &lt 2 N     &mt RIGHT_GUI E            &mt RIGHT_ALT I  &mt RCTRL O    &kp SQT
 &kp ESCAPE  &kp Z        &kp X           &kp C                        &kp D           &kp V                   &kp K                  &kp H       &kp COMMA                  &kp DOT          &kp FSLH       &kp ENTER
                                          &mt LEFT_COMMAND LEFT_ARROW  &lt 1 UP_ARROW  &mt LEFT_SHIFT ENTER    &mt RIGHT_SHIFT SPACE  &lt 2 DOWN  &mt RIGHT_ALT RIGHT_ARROW
             >;
