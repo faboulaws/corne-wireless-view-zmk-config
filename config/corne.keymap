@@ -34,7 +34,7 @@
             label = "Base";
             bindings = <
 &kp ESCAPE  &kp Q        &kp W           &lt 3 F                      &kp P           &kp B                   &kp J                  &kp L       &kp U                      &kp Y            &kp SEMICOLON  &kp BSPC
-&kp TAB     &hm LCTRL A  &hm LEFT_ALT R  &hm LEFT_GUI S               &lt 1 T         &lt 3 G                 &lt 3 M                &lt 2 N     &mt RIGHT_GUI E            &mt RIGHT_ALT I  &mt RCTRL O    &kp SQT
+&kp TAB     &hm LCTRL A  &hm LEFT_ALT R  &hm LEFT_GUI S               &lt 1 T         &lt 3 G                 &lt 3 M                &lt 2 N     &hm RIGHT_GUI E            &hm RIGHT_ALT I  &hm RCTRL O    &kp SQT
 &kp ESCAPE  &kp Z        &kp X           &kp C                        &kp D           &kp V                   &kp K                  &kp H       &kp COMMA                  &kp DOT          &kp FSLH       &kp ENTER
                                          &hm LEFT_COMMAND LEFT_ARROW  &lt 1 UP_ARROW  &mt LEFT_SHIFT ENTER    &mt RIGHT_SHIFT SPACE  &lt 2 DOWN  &mt RIGHT_ALT RIGHT_ARROW
             >;
