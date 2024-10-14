@@ -28,6 +28,21 @@
             bindings = <&kp LEFT_ARROW>;
             key-positions = <39 36>;
         };
+
+        combo_right {
+            bindings = <&kp RIGHT>;
+            key-positions = <41 38>;
+        };
+
+        combo_down {
+            bindings = <&kp DOWN>;
+            key-positions = <40 38>;
+        };
+
+        combo_up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <39 37>;
+        };
     };
 
     keymap {
